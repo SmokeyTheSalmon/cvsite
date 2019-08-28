@@ -57,7 +57,6 @@ class Main extends Component {
         <div id="main" className="Main">
           <header className="Main-header">
             <img src={logo} className="Main-logo" alt="logo" />
-            <span>{this.state.name}</span>
 
             <div>
               {routes.map((route, index) => (

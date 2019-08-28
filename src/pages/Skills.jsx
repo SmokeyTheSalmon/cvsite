@@ -5,7 +5,13 @@ class Skills extends Component {
   render() {
     return (
       <div>
-        <h1>*CASTS A SPELL THAT MAKES YOUR PEEPEE SMALL*</h1>
+        <p>Java!</p>
+        <p>Javascript!</p>
+        <p>Python!</p>
+        <p>C!</p>
+        <p>C++!</p>
+        <p>PHP!</p>
+        <p>Ruby!</p>
       </div>
     );
   }
