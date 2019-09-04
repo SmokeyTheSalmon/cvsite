@@ -7,6 +7,8 @@ import Skills from "../pages/Skills";
 import Hobbies from "../pages/Hobbies";
 import Bio from "../pages/Bio";
 import Contact from "../pages/Contact";
+import Certificates from "../pages/Certificates";
+import Experience from "../pages/Experience";
 
 const routes = [
   {
@@ -20,6 +22,14 @@ const routes = [
   {
     path: "/skills",
     main: () => <Skills />
+  },
+  {
+    path:"/certificates",
+    main: () => <Certificates />
+  },
+  {
+    path:"/experience",
+    main:()=><Experience />
   },
   {
     path: "/hobbies",
@@ -51,6 +61,8 @@ class Main extends Component {
           ></img>
           <Link to="/bio">Wie ben ik?</Link>
           <Link to="/skills">Skills</Link>
+          <Link to="/certificates">Certificaten</Link>
+          <Link to="/experience">Experience</Link>
           <Link to="/hobbies">Hobbies</Link>
           <Link to="/contact">Contact</Link>
         </div>
