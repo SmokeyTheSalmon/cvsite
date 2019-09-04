@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1e333370.chunk.css",
+    "main.js": "/static/js/main.f302a67f.chunk.js",
+    "main.js.map": "/static/js/main.f302a67f.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.186c313c.chunk.js": "/static/js/2.186c313c.chunk.js",
+    "static/js/2.186c313c.chunk.js.map": "/static/js/2.186c313c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.8c236b5b1ba7f325ae9f986dfaa88383.js": "/precache-manifest.8c236b5b1ba7f325ae9f986dfaa88383.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.1e333370.chunk.css.map": "/static/css/main.1e333370.chunk.css.map",
+    "static/media/POREM.png": "/static/media/POREM.de4cfb94.png",
+    "static/media/Twenty_sided_dice.svg": "/static/media/Twenty_sided_dice.4ba7f993.svg",
+    "static/media/cat.svg": "/static/media/cat.11b89a6b.svg",
+    "static/media/iconmonstr-email-3.svg": "/static/media/iconmonstr-email-3.09801cfe.svg",
+    "static/media/iconmonstr-github-3.svg": "/static/media/iconmonstr-github-3.96f4c70d.svg",
+    "static/media/iconmonstr-linkedin-3.svg": "/static/media/iconmonstr-linkedin-3.5b238434.svg"
+  }
+}
