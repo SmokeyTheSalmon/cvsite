@@ -8,7 +8,7 @@ h1 {
 
 .Main {
   text-align: center;
-  margin-left: 20vmin;
+  margin-left: 25vmin;
 }
 
 .Main-header {
@@ -30,7 +30,7 @@ h1 {
 }
 
 .Sidebar {
-  width: 20vmin;
+  width: 25vmin;
   height: 100%; /* Full-height: remove this if you want "auto" height */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */

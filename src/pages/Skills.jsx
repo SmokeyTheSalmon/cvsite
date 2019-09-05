@@ -9,6 +9,7 @@ import ReactLogo from '../components/SVGS/codelogos/react.svg';
 import PHPLogo from '../components/SVGS/codelogos/php.svg';
 import HTML5Logo from '../components/SVGS/codelogos/html5.svg';
 import AngularLogo from '../components/SVGS/codelogos/angularjs.svg';
+import JavaLogo from '../components/SVGS/codelogos/java.svg';
 
 class Skills extends Component {
   state = {};
@@ -16,6 +17,7 @@ class Skills extends Component {
     return (
       <div>
         <div className="Programming-language-logos">
+          <img src={JavaLogo} alt="Java"></img>
           <img src={CxxLogo} alt="C++"></img>
           <img src={PythonLogo} alt="Python"></img>
           <img src={JavascriptLogo} alt="Javascript"></img>
