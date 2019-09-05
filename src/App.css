@@ -11,12 +11,6 @@ h1 {
   margin-left: 20vmin;
 }
 
-.Main-logo {
-  animation: App-logo-spin infinite 10s linear;
-  height: 10vmin;
-  pointer-events: none;
-}
-
 .Main-header {
   background-color: #faedab; /* Memes in Sylvan */
   min-height: 100vh;
@@ -79,7 +73,7 @@ h1 {
   margin: 10px;
 }
 
-.Hobby-text p {
+.Hobby-text p{
   margin-left: 30vmin;
   margin-right: 30vmin;
 }
@@ -87,4 +81,73 @@ h1 {
 .Bio-text p{
   margin-left: 30vmin;
   margin-right: 30vmin;
+}
+
+.Hobby-text a{
+  color: #696969;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Hobby-text a:hover{
+  color: #faedab;
+  background: #696969;
+  border-radius: 8px; 
+}
+
+.Scrum-logo {
+  height: 25vmin;
+}
+
+.OCA-logo {
+  height: 20vmin;
+}
+
+.That-boy {
+  height: 30vmin;
+}
+
+.D20 {
+  animation: App-logo-spin infinite 10s linear;
+  height: 10vmin;
+  pointer-events: none;
+}
+
+.Certdiv1 {
+  float: left;
+  margin: 3vmin;
+}
+
+.Certdiv2 {
+  margin: 3vmin;
+}
+
+.Werk-div {
+  margin: 3vmin;
+  width: 40vmin;
+}
+
+.Opleiding-div {
+  margin: 3vmin;
+  width: 40vmin;
+}
+
+.Programming-language-logos {
+  margin: 5vmin;
+}
+
+.Programming-language-logos img{
+  height: 10vmin;
+  margin: 5px;
+}
+
+@supports (display: flex){
+  @media screen and (min-width: 639px) {
+    .Werk-div {
+      float: left;
+    }
+    .Opleiding-div {
+      float: right;
+    }
+  }
 }

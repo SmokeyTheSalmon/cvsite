@@ -8,6 +8,7 @@ class Contact extends Component {
   render() {
     return (
       <div>
+        <h1>Wil je me graag spreken? Stuur een berichtje!</h1>
         <a
           href="https://www.linkedin.com/in/roel-van-bakkum-726b4b89/"
           target="_blank"

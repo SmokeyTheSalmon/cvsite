@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import logo from "./SVGS/Twenty_sided_dice.svg";
 import cat from "./SVGS/cat.svg";
 import porem from "./IMAGES/POREM.png";
 import Skills from "../pages/Skills";
@@ -60,16 +59,14 @@ class Main extends Component {
             alt="Like, a surfer looking dude"
           ></img>
           <Link to="/bio">Wie ben ik?</Link>
-          <Link to="/skills">Skills</Link>
+          <Link to="/skills">Vaardigheden</Link>
           <Link to="/certificates">Certificaten</Link>
-          <Link to="/experience">Experience</Link>
+          <Link to="/experience">Ervaring</Link>
           <Link to="/hobbies">Hobbies</Link>
           <Link to="/contact">Contact</Link>
         </div>
         <div id="main" className="Main">
           <header className="Main-header">
-            <img src={logo} className="Main-logo" alt="logo" />
-
             <div>
               {routes.map((route, index) => (
                 <Route key={index} path={route.path} component={route.main} />
