@@ -11,23 +11,79 @@ import HTML5Logo from '../components/SVGS/codelogos/html5.svg';
 import AngularLogo from '../components/SVGS/codelogos/angularjs.svg';
 import JavaLogo from '../components/SVGS/codelogos/java.svg';
 
+const skills = [
+  {
+    name: "Java",
+    logo: JavaLogo,
+    experience: 0.6,
+  },
+  {
+    name: "C++",
+    logo: CxxLogo,
+    experience: 0.2,
+  },
+  {
+    name: "Python",
+    logo: PythonLogo,
+    experience: 0.5,
+  },
+  {
+    name: "Javascript",
+    logo: JavascriptLogo,
+    experience: 0.7,
+  },
+  {
+    name: "Intellij",
+    logo: IntellijLogo,
+    experience: 0.3,
+  },
+  {
+    name: "Spring",
+    logo: SpringLogo,
+    experience: 0.3,
+  },
+  {
+    name: "Ruby",
+    logo: RubyLogo,
+    experience: 0.4,
+  },
+  {
+    name: "react",
+    logo: ReactLogo,
+    experience: 0.5,
+  },
+  {
+    name: "PHP",
+    logo: PHPLogo,
+    experience: 0.4,
+  },
+  {
+    name: "HTML5",
+    logo: HTML5Logo,
+    experience: 0.7,
+  },
+  {
+    name: "Angular",
+    logo: AngularLogo,
+    experience: 0.6,
+  }
+]
+
 class Skills extends Component {
   state = {};
+  
+//br fucks up at 609 screen width and works again at 398 (sort of) (c++ logo jumps out of line)
+
   render() {
     return (
       <div>
         <div className="Programming-language-logos">
-          <img src={JavaLogo} alt="Java"></img>
-          <img src={CxxLogo} alt="C++"></img>
-          <img src={PythonLogo} alt="Python"></img>
-          <img src={JavascriptLogo} alt="Javascript"></img>
-          <img src={IntellijLogo} alt="Intellij"></img>
-          <img src={SpringLogo} alt="Spring"></img>
-          <img src={RubyLogo} alt="Ruby"></img>
-          <img src={ReactLogo} alt="React"></img>
-          <img src={PHPLogo} alt="PHP"></img>
-          <img src={HTML5Logo} alt="HTML"></img>
-          <img src={AngularLogo} alt="Angular"></img>
+          {skills.map((language, index) => (
+                <div key={index} className="Skill-bar">
+                  <img src={language.logo} alt={language.name}></img>
+                  <progress value={language.experience}></progress>
+                </div>
+          ))}
         </div>
       </div>
     );

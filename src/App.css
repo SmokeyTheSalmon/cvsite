@@ -74,13 +74,13 @@ h1 {
 }
 
 .Hobby-text p{
-  margin-left: 30vmin;
-  margin-right: 30vmin;
+  margin-left: 10vmin;
+  margin-right: 10vmin;
 }
 
 .Bio-text p{
-  margin-left: 30vmin;
-  margin-right: 30vmin;
+  margin-left: 10vmin;
+  margin-right: 10vmin;
 }
 
 .Hobby-text a{
@@ -141,6 +141,32 @@ h1 {
   margin: 5px;
 }
 
+progress[value]{
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 40vmin;
+  height: 14px;
+}
+
+progress[value]::-webkit-progress-bar{
+  background-color: #696969;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.25) inset;
+}
+
+progress[value]::-webkit-progress-value{
+  background-image: 
+    -webkit-linear-gradient(
+      -45deg,
+      transparent 33%, rgba(0,0,0,1) 33%,
+      rgba(0,0,0,.1) 66%, transparent 66%),
+    -webkit-linear-gradient(top, rgba(255,255,255,.25), rgba(0,0,0,.25)),
+    -webkit-linear-gradient(left, red, red);
+  border-radius: 6px;
+  background-size: 35px 20px, 100% 100%;
+}
+
 @supports (display: flex){
   @media screen and (min-width: 639px) {
     .Werk-div {
@@ -148,6 +174,14 @@ h1 {
     }
     .Opleiding-div {
       float: right;
+    }
+    .Hobby-text {
+      margin-left: 20vmin;
+      margin-right: 20vmin;
+    }
+    .Bio-text {
+      margin-left: 20vmin;
+      margin-right: 20vmin;
     }
   }
 }
