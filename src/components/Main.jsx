@@ -8,6 +8,7 @@ import Bio from "../pages/Bio";
 import Contact from "../pages/Contact";
 import Certificates from "../pages/Certificates";
 import Experience from "../pages/Experience";
+import ReactDOOM from "../pages/ReactDoom";
 
 const routes = [
   {
@@ -37,6 +38,10 @@ const routes = [
   {
     path: "/contact",
     main: () => <Contact />
+  },
+  {
+    path: "/doom",
+    main: () => <ReactDOOM/>
   }
 ];
 
@@ -64,6 +69,7 @@ class Main extends Component {
           <Link to="/experience">Ervaring</Link>
           <Link to="/hobbies">Hobbies</Link>
           <Link to="/contact">Contact</Link>
+          <Link to="/doom">DOOM</Link>
         </div>
         <div id="main" className="Main">
           <header className="Main-header">
