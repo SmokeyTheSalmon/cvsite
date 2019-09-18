@@ -8,7 +8,7 @@ import Bio from "../pages/Bio";
 import Contact from "../pages/Contact";
 import Certificates from "../pages/Certificates";
 import Experience from "../pages/Experience";
-import ReactDOOM from "../pages/ReactDoom";
+import JsDos from "../pages/JsDos";
 
 const routes = [
   {
@@ -41,7 +41,7 @@ const routes = [
   },
   {
     path: "/doom",
-    main: () => <ReactDOOM/>
+    main: () => <JsDos/>
   }
 ];
 
