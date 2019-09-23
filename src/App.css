@@ -12,7 +12,7 @@ h1 {
 }
 
 .Main-header {
-  background-color: #faedab; /* Memes in Sylvan */
+  background-color: #e3e3e3;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,27 +31,29 @@ h1 {
 
 .Sidebar {
   width: 25vmin;
-  height: 100%; /* Full-height: remove this if you want "auto" height */
+  height: 100%;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #420; /* Dankest colour ever */
+  background-color: #1337;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
+  box-shadow: 0px 0px 5vmin 0px #1337;
 }
 
 .Sidebar a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 3vmin;
-  color: #faedab;
+  color: #e3e3e3;
   display: block;
 }
 
 .Sidebar a:hover {
-  color: #696969;
-  background-color: rgb(6, 6, 6);
+  /* color: #696969; */
+  background-color: #1337;
+  box-shadow: 2px 4px 8px rgba(7, 22, 22, 0.467);
 }
 
 .Porem {
@@ -90,7 +92,7 @@ h1 {
 }
 
 .Hobby-text a:hover{
-  color: #faedab;
+  color: #e3e3e3;
   background: #696969;
   border-radius: 8px; 
 }
@@ -171,7 +173,7 @@ progress[value]::-webkit-progress-value{
       transparent 33%, rgba(0,0,0,1) 33%,
       rgba(0,0,0,.1) 66%, transparent 66%),
     -webkit-linear-gradient(top, rgba(255,255,255,.25), rgba(0,0,0,.25)),
-    -webkit-linear-gradient(left, red, red);
+    -webkit-linear-gradient(left, #1337, #1337);
   border-radius: 6px;
   background-size: 35px 20px, 100% 100%;
 }
