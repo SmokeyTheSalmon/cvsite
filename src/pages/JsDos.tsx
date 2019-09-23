@@ -11,7 +11,9 @@ const JsDos: React.FC = () => {
 
     useEffect(() => {
         if (ref !== null) {
-            const ciPromise = Dos(ref.current as HTMLCanvasElement, {wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js"}).then((runtime) => {
+            //TODO: Use local wdosbox
+            const ciPromise = Dos(ref.current as HTMLCanvasElement, {wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js", cycles: "max"})
+            .then((runtime) => {
                 return runtime.fs.extract(Game).then(() => {
                     return runtime.main(["-c", "Doom.exe"]);
                 });
@@ -23,7 +25,9 @@ const JsDos: React.FC = () => {
         }
     }, [ref]);
 
-    return <canvas ref={ref} />;
+    return <div><canvas ref={ref} /></div>;
 }
 
 export default JsDos;
+
+//TODO: exit the runtime when Main changes content
